@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Font Analyzer Installed</title>
+
+    <style>
+        :root {
+            --bg: #f6f8fc;
+            --surface: #ffffff;
+            --text: #1f1f1f;
+            --muted: #5f6368;
+            --border: rgba(0, 0, 0, .10);
+            --shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 8px 24px rgba(0, 0, 0, .08);
+            --blue: #1a73e8;
+            --radius: 16px;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .wrap {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .sub {
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .card {
+            margin-top: 20px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 20px 24px;
+        }
+
+        .steps {
+            margin: 0 auto;
+            max-width: 600px;
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .screenshot {
+            margin: 20px auto 25px;
+            max-width: 760px;
+        }
+
+        .screenshot img {
+            width: 100%;
+            height: auto;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            display: block;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrap">
+
+    <h1>Font Analyzer Installed</h1>
+
+    <div class="card">
+
+        <p class="steps">
+            Click the puzzle piece (1) in the top right of your browser. Then, click the little pin (2) next to the extension:
+        </p>
+
+        <div class="screenshot">
+            <img src="images/step1.png" alt="Pin extension">
+        </div>
+
+        <p class="steps">
+            Open the extension on any page to start using Font Analyzer:
+        </p>
+
+        <div class="screenshot">
+            <img src="images/step2.png" alt="Open extension">
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
