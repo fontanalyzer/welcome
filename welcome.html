@@ -115,6 +115,7 @@
             border: 1px solid var(--border);
             background: linear-gradient(180deg, rgba(0,0,0,.02), transparent 60%);
             overflow: hidden;
+            max-width: 600px;
         }
 
         .shot img{
@@ -176,15 +177,8 @@
 <body>
 <div class="wrap">
     <header>
-        <div class="logo" aria-hidden="true">
-            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                <path d="M10.8 3.2c.4 0 .7.2.9.6l5.4 13.1c.2.5 0 1-.6 1.2-.5.2-1 0-1.2-.6l-1.2-2.9H7.5l-1.2 2.9c-.2.5-.7.8-1.2.6-.5-.2-.8-.7-.6-1.2l5.4-13.1c.2-.4.5-.6.9-.6Zm2.6 9.7L10.8 6.5 8.2 12.9h5.2Z"/>
-                <path d="M20.7 20.0l-2.4-2.4c.6-.8.9-1.9.9-3 0-2.8-2.2-5-5-5s-5 2.2-5 5 2.2 5 5 5c1.1 0 2.2-.4 3-.9l2.4 2.4c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4ZM14.2 18c-1.9 0-3.4-1.5-3.4-3.4s1.5-3.4 3.4-3.4 3.4 1.5 3.4 3.4S16.1 18 14.2 18Z"/>
-            </svg>
-        </div>
         <div>
             <h1>Font Analyzer Installed</h1>
-            <p class="sub">Quick setup in under a minute.</p>
         </div>
     </header>
 
@@ -192,6 +186,8 @@
         <section class="content">
             <p class="steps">
                 1. Click the puzzle piece in the top right of your browser.
+            </p>
+            <p class="steps">
                 2. Click the little pin next to the extension.
             </p>
         </section>
@@ -200,10 +196,7 @@
             <figure>
                 <img src="images/step1.png" alt="Open Extensions menu and pin Font Analyzer" />
             </figure>
-            <div class="caption">Tip: pinning keeps Font Analyzer one click away.</div>
         </section>
-
-        <div class="divider"></div>
 
         <section class="content">
             <p class="steps">
@@ -215,18 +208,10 @@
             <figure>
                 <img src="images/step2.png" alt="Open Font Analyzer on a page" />
             </figure>
-            <div class="caption">That’s it — now you can inspect typography on any site.</div>
         </section>
 
-        <section class="footer">
-            <span class="pill"><span class="dot"></span> Font Analyzer is ready</span>
-            <span>© <span id="y"></span> Font Analyzer</span>
-        </section>
     </main>
 </div>
 
-<script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
