@@ -86,6 +86,11 @@
             margin: 40px 0;
         }
     </style>
+
+    <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script>
+    <script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.25.15-min.js.gz"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
+    window.amplitude.init('fa0390b73ba2ff1fd0f67664f37739ac', {"autocapture": {"elementInteractions": true}});</script>
 </head>
 
 <body>
